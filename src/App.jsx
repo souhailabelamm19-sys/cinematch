@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:3001");
+const socket = io("https://cinematch-production-6e64.up.railway.app");
 const API_KEY = "db7de376a3954cc4908f9f703e8f19bc";
 const API_URL = "https://api.themoviedb.org/3";
-
 function generateRoomId() {
   return Math.random().toString(36).substring(2, 6).toUpperCase();
 }
